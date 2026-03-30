@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Biochar Calculator</title>
+</head>
+
+<body>
+
+<h1>Kalkulator Biochar</h1>
+
+<input id="limbah" placeholder="Jumlah limbah">
+
+<button onclick="hitung()">Hitung</button>
+
+<p id="hasil"></p>
+
+<script>
+
+function hitung(){
+
+let limbah = document.getElementById("limbah").value
+let biochar = limbah * 0.3
+
+document.getElementById("hasil").innerHTML =
+"Potensi Biochar: " + biochar + " kg"
+
+}
+
+</script>
+
+</body>
+
+</html>
